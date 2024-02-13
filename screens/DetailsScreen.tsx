@@ -33,10 +33,6 @@ return<Text>НЕ РАБОАТЕТ</Text>}
 
 return (
 <View style={{}}>
-<Button
-title="Go to Home"
-onPress={() => navigation.navigate('Home')}
-/>
 <Text style={styles.name}>{data.character.name}</Text>
  <Image source={{uri: `${data.character.image}`}}
         style={{width: 420, height: 400}}
