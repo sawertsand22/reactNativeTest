@@ -5,7 +5,8 @@ import { useQuery } from '@apollo/client';
 import { GET_CHARACTERS } from '../queries';
 import { NavigationContainer } from '@react-navigation/native';
 import { gql } from '@apollo/client';
-import { useMutation } from '@apollo/client';
+import { render } from '@testing-library/react-native';
+
 export const GET_CHARACTERS_BY_ID = gql`
 query GetCharacter($param: ID!){
   character(id: $param) {
@@ -29,6 +30,7 @@ if (error) return <Text>Error: {error.message}</Text>;
 if(!data|| !data.character)
 {
 return<Text>НЕ РАБОАТЕТ</Text>}
+
 return (
 <View style={{}}>
 <Button

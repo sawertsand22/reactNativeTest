@@ -21,6 +21,7 @@ if (error) return <Text>Error: {error.message}</Text>;
 return (
 <View style={{backgroundColor: '#4cbb17',}}>
     <ScrollView>
+    <Text style={{fontSize: 40,marginLeft: 75,}}>Rick AND Morty </Text>
     {data.characters.results.map((character, id) => (
 
         <View key={id} style={{flex: 0.3,
